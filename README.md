@@ -24,7 +24,7 @@ value: 20230824
 ```
 🛠 Usage
 ```bash
-cargo run -- path/to/input.xml path/to/output_dir
+cargo run -- path/to/input.xml
 ```
 This will create data.yml in the specified output folder.
 
