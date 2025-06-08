@@ -9,21 +9,24 @@ CLI-friendly — easy to integrate in pipelines
 
 🧪 Example
 Input XML:
+```XML
 <DicomDataset>
 <PatientName>DOE^JOHN</PatientName>
 <StudyDate>20230824</StudyDate>
 </DicomDataset>
- Output YAML:
+Output YAML:
 PatientName:
 tag: (0010,0010)
 value: DOE^JOHN
 StudyDate:
 tag: (0008,0020)
 value: 20230824
-
- 🛠 Usage
+```
+🛠 Usage
+```bash
 cargo run -- path/to/input.xml path/to/output_dir
- This will create data.yml in the specified output folder.
+```
+This will create data.yml in the specified output folder.
 
 📁 Structure
 main.rs — CLI handling and orchestration
