@@ -27,8 +27,9 @@ StudyDate:
 
 🛠 Usage
 ```bash
-cargo run -- path/to/input.xml
+cargo run
 ```
+You will be asked to enter the input file path.
 This will create data.yml in the specified output folder.
 
 📁 Structure
