@@ -18,11 +18,11 @@ Input XML:
 Output YAML:
 ```yml
 PatientName:
-tag: (0010,0010)
-value: DOE^JOHN
+    tag: (0010,0010)
+    value: DOE^JOHN
 StudyDate:
-tag: (0008,0020)
-value: 20230824
+    tag: (0008,0020)
+    value: 20230824
 ```
 
 🛠 Usage
