@@ -1,8 +1,7 @@
 use std::io;
 
-mod model;
-mod xml_parser;
-mod yaml_writer;
+use xml2yml_converter::xml_parser;
+use xml2yml_converter::yaml_writer;
 
 fn main() {
     println!("Enter the path to the XML file:");

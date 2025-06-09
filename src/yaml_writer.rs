@@ -21,7 +21,7 @@ pub fn write_yml(fields: Vec<DicomField>) -> Result<(), Box<dyn std::error::Erro
     let yaml = serde_yaml::to_string(&map)?;
     // create output file as data.yml
     let output_path = format!("data.yml");
-    let mut file = File::create(&output_path);
+    let file = File::create(&output_path);
     file?.write_all(yaml.as_bytes())?;
 
     println!("YAML written to {}", output_path);

@@ -14,7 +14,9 @@ Input XML:
 <PatientName>DOE^JOHN</PatientName>
 <StudyDate>20230824</StudyDate>
 </DicomDataset>
+```
 Output YAML:
+```yml
 PatientName:
 tag: (0010,0010)
 value: DOE^JOHN
@@ -22,6 +24,7 @@ StudyDate:
 tag: (0008,0020)
 value: 20230824
 ```
+
 🛠 Usage
 ```bash
 cargo run -- path/to/input.xml
